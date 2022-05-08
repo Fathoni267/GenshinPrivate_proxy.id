@@ -21,7 +21,6 @@ class MlgmXyysd_Anime_Game_Proxy:
 
     def request(self, flow: http.HTTPFlow) -> None:
         REMOTE_HOST = ctx.options.ip
-        REMOTE_PORT = ctx.options.port
         
         LIST_DOMAINS = [
             "api-os-takumi.mihoyo.com",
@@ -64,7 +63,6 @@ class MlgmXyysd_Anime_Game_Proxy:
             else:
                 flow.request.scheme = "http"
             flow.request.host = REMOTE_HOST
-            flow.request.port = REMOTE_PORT
 
 addons = [
 	MlgmXyysd_Anime_Game_Proxy()
