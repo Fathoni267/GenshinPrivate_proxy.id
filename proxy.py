@@ -8,15 +8,8 @@ class MlgmXyysd_Anime_Game_Proxy:
         loader.add_option(
             name = "ip",
             typespec = str,
-            default = "raidensmp.me",
+            default = "sg2.game.yuuki.me",
             help = "IP address to replace",
-        )
-
-        loader.add_option(
-            name = "port",
-            typespec = int,
-            default = 443,
-            help = "Port to replace",
         )
 
         loader.add_option(
