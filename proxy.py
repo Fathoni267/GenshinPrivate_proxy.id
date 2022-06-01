@@ -8,7 +8,7 @@ class MlgmXyysd_Anime_Game_Proxy:
         loader.add_option(
             name = "ip",
             typespec = str,
-            default = "sg2.game.yuuki.me",
+            default = "sg.game.yuuki.me",
             help = "IP address to replace",
         )
 
